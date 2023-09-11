@@ -1,8 +1,11 @@
-// HW2_Program01.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+//=============================
+//Author: Jack Grimes
+//Date: 9-11-23
+//Desc: change calculator
+//=============================
 
 #include <iostream>
-#include <cmath>
+#include <string>
 
 using namespace std;
 int main()
@@ -16,8 +19,8 @@ int main()
 	cin >> input;
 
 	if (input >= 20) {
-		twenty = input/20;
-		input = input - (twenty * 20);
+		twenty = input/20; // Used to figure out how many bills fits into input.
+		input = input - (twenty * 20); // Used to figure out what's left over.
 	}
 
 	if (input >= 10) {
@@ -34,8 +37,8 @@ int main()
 		one = input;
 	}
 
-	cout << "$20 bills: " + twenty << endl;
-	cout << "$10 bills: " + ten << endl;
-	cout << "$5 bills: " + five << endl;
-	cout << "$1 bills: " + one << endl;
+	cout << "20 bills: " << twenty << endl;
+	cout << "10 bills: " << ten << endl;
+	cout << "5 bills: " << five << endl;
+	cout << "1 bills: " << one << endl;
 }
