@@ -17,25 +17,19 @@ int main()
 	int one = 0;
 	cout << "Enter a Dollar Amount!: ";
 	cin >> input;
+	cout << "The fewest amount of bills to reach $" << input << " is..." << endl;
+	cout << "========================================================" << endl;
 
-	if (input >= 20) {
-		twenty = input / 20; // Used to figure out how many bills fits into input.
-		input = input - (twenty * 20); // Used to figure out what's left over.
-	}
+	twenty = input / 20; // Used to figure out how many bills fits into input.
+	input = input - (twenty * 20); // Used to figure out what's left over.
+	
+	ten = input / 10;
+	input = input - (ten * 10);
 
-	if (input >= 10) {
-		ten = input / 10;
-		input = input - (ten * 10);
-	}
-
-	if (input >= 5) {
-		five = input / 5;
-		input = input - (five * 5);
-	}
-
-	if (input >= 1) {
-		one = input;
-	}
+	five = input / 5;
+	input = input - (five * 5);
+	
+	one = input;
 
 	cout << "20 bills: " << twenty << endl;
 	cout << "10 bills: " << ten << endl;
