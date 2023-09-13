@@ -19,7 +19,7 @@ int main()
 	cin >> input;
 
 	if (input >= 20) {
-		twenty = input/20; // Used to figure out how many bills fits into input.
+		twenty = input / 20; // Used to figure out how many bills fits into input.
 		input = input - (twenty * 20); // Used to figure out what's left over.
 	}
 
